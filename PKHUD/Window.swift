@@ -14,7 +14,7 @@ internal class Window: UIWindow {
     internal let frameView: FrameView
     internal init(frameView: FrameView = FrameView()) {
         self.frameView = frameView
-        super.init(frame: UIApplication.sharedApplication().delegate!.window!!.bounds)
+        super.init(frame: UIScreen.mainScreen().bounds)
         commonInit()
     }
 
